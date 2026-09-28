@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inner Space | Interior Decorating and Decorative Wall Painting in Lagos</title>
+<meta name="description" content="Inner Space is a professional interior decorating company in Lagos, Nigeria, offering decorative wall painting and innovative interior decor.">
+<meta name="theme-color" content="#0a2a2b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a2a2b'/%3E%3Crect x='20' y='20' width='28' height='28' rx='5' fill='%231f9d8b'/%3E%3Crect x='52' y='20' width='28' height='28' rx='5' fill='%23c8962e'/%3E%3Crect x='20' y='52' width='28' height='28' rx='5' fill='%23c8962e'/%3E%3Crect x='52' y='52' width='28' height='28' rx='5' fill='%231f9d8b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --g9:#0a2a2b;      /* deep teal */
+  --g8:#11403d;
+  --g7:#19574f;
+  --wal:#33291a;     /* umber */
+  --brass:#c8962e;
+  --brass2:#ebd192;
+  --plaster:#ebe7de;
+  --paper:#f7f5f0;
+  --ink:#1a1916;
+  --mute:#68645b;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+body{font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:1rem;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:500;line-height:1.08;letter-spacing:-.015em}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+
+.wrap{width:min(1180px,92%);margin-inline:auto}
+.sec{padding:clamp(70px,9vw,124px) 0}
+.sec-head{max-width:640px;margin-bottom:clamp(32px,5vw,56px)}
+.sec-head h2{font-size:clamp(2rem,4.4vw,3.2rem)}
+.sec-head p{margin-top:16px;color:var(--mute);max-width:52ch}
+.on-dark .sec-head p{color:rgba(247,245,240,.72)}
+
+/* image slots: real photo on top, colour fallback beneath if the file is missing */
+.ph{background-color:var(--g8);background-image:var(--img,none),linear-gradient(135deg,var(--g7),var(--wal));background-size:cover;background-position:center}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:.95rem;transition:background .25s var(--ease),color .25s var(--ease),transform .25s var(--ease),border-color .25s var(--ease)}
+.btn-brass{background:var(--brass);color:var(--g9)}
+.btn-brass:hover{background:var(--brass2);transform:translateY(-2px)}
+.btn-line{border:1.5px solid rgba(247,245,240,.55);color:var(--paper)}
+.btn-line:hover{border-color:var(--brass);color:var(--brass2)}
+.btn-dark{background:var(--g9);color:var(--paper)}
+.btn-dark:hover{background:var(--g7);transform:translateY(-2px)}
+
+/* ---------- header ---------- */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s var(--ease),box-shadow .3s var(--ease)}
+.hdr.solid{background:rgba(10,42,43,.96);box-shadow:0 6px 24px rgba(0,0,0,.25);backdrop-filter:blur(6px)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{display:flex;align-items:center;gap:12px;color:var(--paper)}
+.logo svg{width:34px;height:34px;flex:none}
+.logo b{display:block;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.2rem;line-height:1.05}
+.logo small{display:block;font-size:.72rem;letter-spacing:.14em;color:var(--brass2);margin-top:2px}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{color:rgba(247,245,240,.86);font-size:.93rem;font-weight:500;transition:color .2s}
+.nav a:hover{color:var(--brass2)}
+.nav .btn{padding:10px 20px;color:var(--g9)}
+.nav .btn:hover{color:var(--g9)}
+.burger{display:none;width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(247,245,240,.4);position:relative;z-index:60}
+.burger span{position:absolute;left:12px;right:12px;height:2px;background:var(--paper);transition:transform .3s var(--ease),opacity .2s,top .3s var(--ease)}
+.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+.burger[aria-expanded="true"] span:nth-child(1){top:21px;transform:rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){top:21px;transform:rotate(-45deg)}
+
+.drawer{position:fixed;inset:0;z-index:55;background:var(--g9);display:flex;flex-direction:column;justify-content:center;padding:100px 8% 60px;transform:translateY(-100%);visibility:hidden;transition:transform .5s var(--ease),visibility 0s .5s}
+.drawer.open{transform:none;visibility:visible;transition:transform .5s var(--ease)}
+.drawer a.dl{font-family:Fraunces,Georgia,serif;font-size:clamp(1.9rem,8vw,2.6rem);color:var(--paper);padding:10px 0;border-bottom:1px solid rgba(200,150,46,.25)}
+.drawer a.dl:hover{color:var(--brass2)}
+.drawer .btn{margin-top:30px;align-self:flex-start}
+.drawer .dnum{margin-top:18px;color:var(--brass2);font-weight:600;align-self:flex-start}
+.drawer .dnum:hover{color:var(--paper)}
+.drawer-x{position:absolute;top:15px;right:4%;width:46px;height:46px;border-radius:50%;border:1.5px solid rgba(200,150,46,.6);display:grid;place-items:center;color:var(--brass2);transition:background .2s,color .2s}
+.drawer-x:hover{background:var(--brass);color:var(--g9)}
+.drawer-x svg{width:20px;height:20px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;color:var(--paper);isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(10,42,43,.95) 0%,rgba(10,42,43,.78) 42%,rgba(10,42,43,.3) 100%),linear-gradient(0deg,rgba(10,42,43,.9) 0%,rgba(10,42,43,0) 35%)}
+.hero-main{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;padding:130px 0 60px}
+.hero h1{font-size:clamp(2.5rem,6.2vw,5rem);max-width:13ch;font-weight:500}
+.hero p.lead{margin-top:24px;font-size:clamp(1rem,1.5vw,1.15rem);max-width:46ch;color:rgba(247,245,240,.82)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+
+.arch-wrap{position:relative;justify-self:end;width:min(380px,100%)}
+.arch-wrap::after{content:"";position:absolute;inset:-14px -14px 14px 14px;border:1.5px solid var(--brass);border-radius:999px 999px 0 0;z-index:-1;opacity:.85}
+.arch{aspect-ratio:3/4;border-radius:999px 999px 0 0;box-shadow:0 30px 60px rgba(0,0,0,.4)}
+.arch-star{position:absolute;top:-22px;left:50%;transform:translateX(-50%);width:44px;height:44px;color:var(--brass);filter:drop-shadow(0 0 14px rgba(200,150,46,.8))}
+
+.hero-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(247,245,240,.22)}
+.fact{padding:22px 24px 26px 0}
+.fact+.fact{padding-left:24px;border-left:1px solid rgba(247,245,240,.22)}
+.fact small{display:block;font-size:.8rem;color:var(--brass2);margin-bottom:2px}
+.fact strong{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:1.25rem}
+
+.hero-main>*{animation:rise .9s var(--ease) both}
+.hero-main>*:nth-child(2){animation-delay:.18s}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+
+/* ---------- about ---------- */
+.about{background:var(--plaster)}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,7vw,96px);align-items:center}
+.about-media{position:relative;padding-bottom:70px}
+.about-media .arch{width:78%;box-shadow:0 24px 50px rgba(17,64,61,.25)}
+.about-media .inset{position:absolute;right:0;bottom:0;width:52%;aspect-ratio:1;border-radius:14px;border:8px solid var(--plaster);box-shadow:0 18px 40px rgba(0,0,0,.2)}
+.about h2{font-size:clamp(2rem,4.2vw,3.1rem)}
+.about p{margin-top:18px;color:var(--mute);max-width:56ch}
+.ticks{margin-top:28px;display:grid;gap:14px;list-style:none}
+.ticks li{display:flex;gap:14px;align-items:flex-start}
+.ticks svg{width:18px;height:18px;flex:none;margin-top:5px;color:var(--brass)}
+.ticks b{font-weight:600}
+
+/* ---------- services ---------- */
+.services{background:var(--g9);color:var(--paper)}
+.svc{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,70px);align-items:start}
+.svc-list{display:flex;flex-direction:column;border-top:1px solid rgba(247,245,240,.16)}
+.svc-tab{display:flex;justify-content:space-between;align-items:center;text-align:left;padding:20px 4px;border-bottom:1px solid rgba(247,245,240,.16);font-family:Fraunces,Georgia,serif;font-size:clamp(1.25rem,2.2vw,1.65rem);color:rgba(247,245,240,.6);transition:color .25s,padding .3s var(--ease)}
+.svc-tab svg{width:20px;height:20px;opacity:0;transform:translateX(-8px);transition:opacity .25s,transform .3s var(--ease);color:var(--brass)}
+.svc-tab:hover{color:var(--paper)}
+.svc-tab[aria-selected="true"]{color:var(--brass2);padding-left:14px}
+.svc-tab[aria-selected="true"] svg{opacity:1;transform:none}
+.svc-panel{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center}
+.svc-panel .arch{aspect-ratio:3/4;transition:opacity .35s}
+.svc-panel.swap .arch{opacity:.2}
+.svc-body h3{font-size:clamp(1.6rem,3vw,2.3rem);color:var(--paper)}
+.svc-body p{margin-top:14px;color:rgba(247,245,240,.76)}
+.svc-body ul{list-style:none;margin-top:22px;display:grid;gap:10px}
+.svc-body li{display:flex;gap:12px;align-items:flex-start;color:rgba(247,245,240,.9)}
+.svc-body li svg{width:14px;height:14px;flex:none;margin-top:7px;color:var(--brass)}
+.svc-body .btn{margin-top:28px}
+
+/* ---------- projects ---------- */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+.chip{padding:9px 20px;border-radius:999px;border:1.5px solid rgba(17,64,61,.25);font-weight:600;font-size:.9rem;color:var(--g8);transition:background .2s,color .2s,border-color .2s}
+.chip:hover{border-color:var(--g8)}
+.chip[aria-pressed="true"]{background:var(--g8);color:var(--paper);border-color:var(--g8)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:240px;grid-auto-flow:dense;gap:16px}
+.tile{position:relative;border-radius:12px;overflow:hidden;cursor:pointer;text-align:left;display:block;width:100%;height:100%}
+.tile[hidden]{display:none}
+.tile.wide{grid-column:span 2}
+.tile.tall{grid-row:span 2}
+.grid.filtered .tile{grid-column:auto;grid-row:auto}
+.tile .ph{position:absolute;inset:0;transition:transform .8s var(--ease)}
+.tile:hover .ph{transform:scale(1.06)}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,42,43,.85) 0%,rgba(10,42,43,0) 55%)}
+.tile figcaption{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;color:var(--paper);font-family:Fraunces,Georgia,serif;font-size:1.15rem}
+.tile figcaption small{display:block;font-family:Manrope,sans-serif;font-size:.8rem;color:var(--brass2);margin-top:2px}
+
+.lb{position:fixed;inset:0;z-index:80;background:rgba(6,26,27,.94);display:none;align-items:center;justify-content:center;padding:24px}
+.lb.open{display:flex}
+.lb-img{width:min(1000px,100%);height:min(70vh,700px);border-radius:12px}
+.lb-cap{position:absolute;left:0;right:0;bottom:26px;text-align:center;color:var(--paper);font-family:Fraunces,Georgia,serif;font-size:1.2rem}
+.lb button{position:absolute;width:48px;height:48px;border-radius:50%;background:rgba(247,245,240,.12);color:var(--paper);display:grid;place-items:center;font-size:1.4rem;transition:background .2s}
+.lb button:hover{background:var(--brass);color:var(--g9)}
+.lb .x{top:20px;right:20px}.lb .pv{left:20px;top:50%}.lb .nx{right:20px;top:50%}
+
+/* ---------- process ---------- */
+.process{background:var(--plaster)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;position:relative;counter-reset:s}
+.steps::before{content:"";position:absolute;top:27px;left:6%;right:6%;height:1.5px;background:linear-gradient(90deg,var(--brass),rgba(200,150,46,.2))}
+.step{position:relative}
+.step .n{width:54px;height:54px;border-radius:50%;background:var(--g9);color:var(--brass2);display:grid;place-items:center;font-family:Fraunces,Georgia,serif;font-size:1.3rem;position:relative}
+.step h3{font-size:1.35rem;margin-top:20px}
+.step p{margin-top:8px;color:var(--mute);font-size:.95rem}
+
+/* ---------- instagram band ---------- */
+.ig{background:var(--wal);color:var(--paper)}
+.ig-in{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.ig h2{font-size:clamp(1.9rem,4vw,3rem);max-width:18ch}
+.ig p{margin-top:16px;color:rgba(247,245,240,.78);max-width:46ch}
+.ig .btn{margin-top:28px}
+.ig-stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.stat{border:1px solid rgba(200,150,46,.4);border-radius:14px;padding:26px 22px}
+.stat b{display:block;font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(2rem,4vw,2.9rem);color:var(--brass2);line-height:1}
+.stat span{display:block;margin-top:8px;font-size:.9rem;color:rgba(247,245,240,.75)}
+
+/* ---------- contact ---------- */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(36px,6vw,80px)}
+.contact h2{font-size:clamp(2rem,4.2vw,3.1rem)}
+.contact .intro{margin-top:16px;color:var(--mute);max-width:44ch}
+.info{margin-top:34px;display:grid;gap:22px}
+.info div small{display:block;font-size:.82rem;color:var(--mute)}
+.info div a,.info div span{font-family:Fraunces,Georgia,serif;font-size:1.25rem}
+.info a:hover{color:var(--g7)}
+.form{background:#fff;border-radius:18px;padding:clamp(24px,4vw,40px);box-shadow:0 20px 50px rgba(17,64,61,.1);border-top:4px solid var(--brass)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{margin-bottom:18px}
+.field label{display:block;font-weight:600;font-size:.88rem;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1.5px solid #d8d4c9;border-radius:10px;font:inherit;background:var(--paper);color:var(--ink);transition:border-color .2s,box-shadow .2s}
+.field textarea{resize:vertical;min-height:120px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--g7);box-shadow:0 0 0 3px rgba(25,87,79,.15)}
+.form .btn{width:100%;padding:16px}
+.form .note{margin-top:12px;font-size:.85rem;color:var(--mute);text-align:center}
+
+/* ---------- footer ---------- */
+.ftr{background:var(--g9);color:rgba(247,245,240,.72);padding:54px 0 30px}
+.ftr-top{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:center;padding-bottom:30px;border-bottom:1px solid rgba(247,245,240,.14)}
+.ftr-links{display:flex;flex-wrap:wrap;gap:22px;font-size:.93rem}
+.ftr-links a:hover{color:var(--brass2)}
+.ftr-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding-top:24px;font-size:.85rem}
+.ftr-bot a{color:var(--brass2)}
+
+/* ---------- floating buttons ---------- */
+.float{position:fixed;right:18px;bottom:18px;z-index:40;display:flex;flex-direction:column;gap:12px}
+.float a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 10px 24px rgba(0,0,0,.3);transition:transform .25s var(--ease)}
+.float a:hover{transform:scale(1.1)}
+.float a svg{width:28px;height:28px}
+.f-wa{background:#25d366}
+.f-ig{background:linear-gradient(45deg,#f9a03f,#e1306c 55%,#7a3fd0)}
+
+/* ---------- responsive ---------- */
+@media (max-width:1000px){
+  .nav{display:none}
+  .burger{display:block}
+  .hero-main{grid-template-columns:1fr;padding-top:120px}
+  .arch-wrap{display:none}
+  .about-grid,.svc,.ig-in,.contact-grid{grid-template-columns:1fr}
+  .about-media{max-width:460px}
+  .steps{grid-template-columns:1fr 1fr;gap:38px 22px}
+  .steps::before{display:none}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .tile.wide{grid-column:span 2}
+}
+@media (max-width:640px){
+  .hero-facts{grid-template-columns:1fr}
+  .fact+.fact{padding-left:0;border-left:0;border-top:1px solid rgba(247,245,240,.22)}
+  .fact{padding:16px 0}
+  .svc-panel{grid-template-columns:1fr}
+  .svc-panel .arch{max-width:260px}
+  .grid{grid-template-columns:1fr;grid-auto-rows:230px}
+  .tile.wide,.tile.tall{grid-column:auto;grid-row:auto}
+  .steps{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr}
+  .ig-stats{grid-template-columns:1fr 1fr}
+  .lb .pv,.lb .nx{top:auto;bottom:80px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<!-- SVG symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 100 100"><rect x="6" y="6" width="42" height="42" rx="8" fill="#1f9d8b"/><rect x="52" y="6" width="42" height="42" rx="8" fill="currentColor"/><rect x="6" y="52" width="42" height="42" rx="8" fill="currentColor"/><rect x="52" y="52" width="42" height="42" rx="8" fill="#1f9d8b"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/></symbol>
+</svg>
+
+<!-- HEADER -->
+<div class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#home" class="logo" aria-label="Inner Space, home">
+      <svg style="color:var(--brass)"><use href="#star"/></svg>
+      <span><b>Inner Space</b><small>Decor and painting</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#process">How we work</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-brass">Get a quote</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+  </div>
+</div>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <button class="drawer-x" id="drawerX" aria-label="Close menu"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  <a class="dl" href="#about">About</a>
+  <a class="dl" href="#services">Services</a>
+  <a class="dl" href="#projects">Projects</a>
+  <a class="dl" href="#process">How we work</a>
+  <a class="dl" href="#contact">Contact</a>
+  <a class="btn btn-brass" data-wa href="https://wa.me/2348135635219?text=Hello%20Inner%20Space%2C%20I%20would%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener"><svg width="20" height="20"><use href="#wa"/></svg> Chat on WhatsApp</a>
+  <a class="dnum" href="tel:+2348135635219">Or call 0813 563 5219</a>
+</div>
+
+<!-- HERO -->
+<header class="hero ph" id="home" data-img="hero" data-w="1800">
+  <div class="wrap hero-main">
+    <div>
+      <h1>Decorative walls and interiors for Lagos spaces.</h1>
+      <p class="lead">Inner Space is a professional interior decorating company based in Lagos. We paint decorative walls and style interiors, so your space feels finished.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-brass">See our projects <svg width="18" height="18"><use href="#arrow"/></svg></a>
+        <a href="https://wa.me/2348135635219?text=Hello%20Inner%20Space%2C%20I%20would%20like%20to%20talk%20about%20a%20project." data-wa class="btn btn-line" target="_blank" rel="noopener"><svg width="20" height="20"><use href="#wa"/></svg> Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="arch-wrap">
+      <svg class="arch-star"><use href="#star"/></svg>
+      <div class="arch ph" data-img="lounge" data-w="900"></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="hero-facts">
+      <div class="fact"><small>What we do</small><strong>Wall painting and decor</strong></div>
+      <div class="fact"><small>Based in</small><strong>Lagos, Nigeria</strong></div>
+      <div class="fact"><small>Follow our work</small><strong>253 on Instagram</strong></div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section class="sec about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media">
+      <div class="arch ph" data-img="living" data-w="900"></div>
+      <div class="inset ph" data-img="dining" data-w="600"></div>
+    </div>
+    <div>
+      <h2>Walls and decor planned as one finished room.</h2>
+      <p>A plain wall and a well-chosen finish are the difference between a room that is lived in and a room that feels designed. Inner Space handles the painting and the decor together, so colours, textures and styling agree with each other from the start.</p>
+      <ul class="ticks">
+        <li><svg><use href="#star"/></svg><span><b>Decorative painting and interior decor</b> from one team, with one point of contact.</span></li>
+        <li><svg><use href="#star"/></svg><span><b>A site inspection first</b>, so we see the space before we plan or quote.</span></li>
+        <li><svg><use href="#star"/></svg><span><b>Projects shared on Instagram</b>, so you can see the work before you call.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec services on-dark" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>What we do</h2>
+      <p>Pick a service to see what it covers. Not sure which one you need? Tell us about the space and we will advise.</p>
+    </div>
+    <div class="svc">
+      <div class="svc-list" role="tablist" aria-label="Services" id="svcList"></div>
+      <div class="svc-panel" id="svcPanel" role="tabpanel">
+        <div class="arch ph" id="svcImg"></div>
+        <div class="svc-body">
+          <h3 id="svcTitle"></h3>
+          <p id="svcText"></p>
+          <ul id="svcPoints"></ul>
+          <a href="#contact" class="btn btn-brass">Ask about this <svg width="18" height="18"><use href="#arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="sec" id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Recent spaces</h2>
+      <p>A selection of our work. Filter by space, or tap any photo to view it larger.</p>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filter projects"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>How a project runs</h2>
+      <p>Four clear stages, so you always know what happens next.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Book an inspection</h3><p>Fill in the short form or message us on WhatsApp and tell us about your space.</p></div>
+      <div class="step"><div class="n">2</div><h3>Site visit and quote</h3><p>We visit, look at the walls, listen to what you want and send a clear quote.</p></div>
+      <div class="step"><div class="n">3</div><h3>Choose your finish</h3><p>You pick colours, textures and decor ideas, and we adjust until it is right.</p></div>
+      <div class="step"><div class="n">4</div><h3>Painting and handover</h3><p>Our team completes the work, then we walk through it with you and fix anything that is not perfect.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="sec ig" id="instagram">
+  <div class="wrap ig-in">
+    <div>
+      <h2>See every project on our Instagram.</h2>
+      <p>New walls, rooms and finished projects are posted regularly. Send us a message there and we will reply.</p>
+      <a class="btn btn-brass" href="https://instagram.com/innerspaceng" target="_blank" rel="noopener"><svg width="20" height="20"><use href="#ig"/></svg> Follow @innerspaceng</a>
+    </div>
+    <div class="ig-stats">
+      <div class="stat"><b>67</b><span>posts of finished work</span></div>
+      <div class="stat"><b>253</b><span>followers and growing</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Tell us about your space.</h2>
+      <p class="intro">Send a few details and we will continue the conversation on WhatsApp, where you can also share photos and plans.</p>
+      <div class="info">
+        <div><small>WhatsApp</small><a data-wa href="https://wa.me/2348135635219?text=Hello%20Inner%20Space%2C%20I%20would%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">0813 563 5219</a></div>
+        <div><small>Call us</small><a href="tel:+2348135635219">0813 563 5219</a></div>
+        <div><small>Instagram</small><a href="https://instagram.com/innerspaceng" target="_blank" rel="noopener">@innerspaceng</a></div>
+        <div><small>Site inspection form</small><a href="https://forms.gle/aGVjiSokUnP32H998" target="_blank" rel="noopener">Book online</a></div>
+        <div><small>Location</small><span>Lagos, Nigeria</span></div>
+      </div>
+    </div>
+    <form class="form" id="form" novalidate>
+      <div class="row">
+        <div class="field"><label for="fn">Your name</label><input id="fn" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="fp">Phone number</label><input id="fp" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="field">
+        <label for="ft">What do you need?</label>
+        <select id="ft" name="type">
+          <option>Decorative wall painting</option>
+          <option>Interior decor</option>
+          <option>Feature wall</option>
+          <option>Site inspection</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="field"><label for="fm">About your project</label><textarea id="fm" name="msg" placeholder="Where is the space, what do you want done, and when would you like to start?"></textarea></div>
+      <button class="btn btn-dark" type="submit">Send on WhatsApp</button>
+      <p class="note" id="formNote">Your message opens in WhatsApp, ready to send.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <a href="#home" class="logo" aria-label="Back to top">
+        <svg style="color:var(--brass)"><use href="#star"/></svg>
+        <span><b>Inner Space</b><small>Decor and painting</small></span>
+      </a>
+      <div class="ftr-links">
+        <a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#process">How we work</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="ftr-bot">
+      <span>&copy; 2026 Inner Space.</span>
+      <span>Website by <a href="#" target="_blank" rel="noopener">Nova Web Solutions</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Project photo">
+  <button class="x" id="lbX" aria-label="Close">&times;</button>
+  <button class="pv" id="lbP" aria-label="Previous photo">&#8249;</button>
+  <div class="lb-img ph" id="lbImg"></div>
+  <button class="nx" id="lbN" aria-label="Next photo">&#8250;</button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<!-- floating buttons -->
+<div class="float">
+  <a class="f-ig" href="https://instagram.com/innerspaceng" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#ig"/></svg></a>
+  <a class="f-wa" data-wa href="https://wa.me/2348135635219?text=Hello%20Inner%20Space%2C%20I%20would%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg><use href="#wa"/></svg></a>
+</div>
+
+<script>
+/* ================= EDIT ME ================= */
+const WHATSAPP = "2348135635219";   // client number, international format, no +
+/* Photos: use a filename ("images/kitchen1.jpg") or a stock photo ID starting with "photo-".
+   Replace these with the client's real Instagram photos before sending. */
+const IMG = {
+  hero:     "photo-1600210492486-724fe5c67fb0",
+  lounge:   "photo-1600607687939-ce8a6c25118c",
+  living:   "photo-1618221195710-dd6b41faaea6",
+  bedroom:  "photo-1540518614846-7eded433c457",
+  dining:   "photo-1600566753190-17f0baa2a6c3",
+  exterior: "photo-1600585154340-be6161a56a0c",
+  detail:   "photo-1493663284031-b7e3aefcdae0",
+  mirror:   "photo-1600121848594-d8644e57abab"
+};
+/* =========================================== */
+
+const src = (key, w = 1000) => {
+  const v = IMG[key] || key;
+  return v.startsWith("photo-") ? `https://images.unsplash.com/${v}?auto=format&fit=crop&w=${w}&q=70` : v;
+};
+const setImg = (el, key, w) => el.style.setProperty("--img", `url("${src(key, w)}")`);
+document.querySelectorAll("[data-img]").forEach(el => setImg(el, el.dataset.img, +el.dataset.w || 900));
+
+/* WhatsApp links */
+const waLink = (text = "Hello Inner Space, I would like to talk about a project.") =>
+  `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;
+document.querySelectorAll("[data-wa]").forEach(a => a.href = waLink());
+
+/* Header + mobile menu */
+const hdr = document.getElementById("hdr"), burger = document.getElementById("burger"), drawer = document.getElementById("drawer");
+const onScroll = () => hdr.classList.toggle("solid", scrollY > 40);
+addEventListener("scroll", onScroll, { passive: true }); onScroll();
+const setMenu = open => {
+  burger.setAttribute("aria-expanded", open);
+  burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  drawer.classList.toggle("open", open);
+  drawer.setAttribute("aria-hidden", !open);
+  document.body.style.overflow = open ? "hidden" : "";
+};
+burger.addEventListener("click", () => setMenu(burger.getAttribute("aria-expanded") !== "true"));
+drawer.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+document.getElementById("drawerX").addEventListener("click", () => setMenu(false));
+
+/* Services */
+const SERVICES = [
+  { name: "Decorative wall painting", img: "detail", text: "Textured, patterned and feature finishes that turn a plain wall into the focus of the room.", pts: ["Textured and plaster-style finishes", "Custom colour choices", "Clean, careful application"] },
+  { name: "Interior decor", img: "living", text: "Innovative decor for living rooms, bedrooms and dining areas, styled around your space and your taste.", pts: ["Room styling and accessories", "Colour and material choices", "Decor that fits how you live"] },
+  { name: "Feature walls", img: "bedroom", text: "One well-finished wall can change a whole room. We help you choose the wall, the finish and the colours around it.", pts: ["Accent walls for living and bedrooms", "Finishes matched to your furniture", "Ideas shown before we start"] }
+];
+const list = document.getElementById("svcList"), panel = document.getElementById("svcPanel");
+SERVICES.forEach((s, i) => {
+  const b = document.createElement("button");
+  b.className = "svc-tab"; b.setAttribute("role", "tab");
+  b.innerHTML = `<span>${s.name}</span><svg><use href="#arrow"/></svg>`;
+  b.addEventListener("click", () => showSvc(i));
+  list.appendChild(b);
+});
+function showSvc(i) {
+  const s = SERVICES[i];
+  [...list.children].forEach((b, k) => b.setAttribute("aria-selected", k === i));
+  panel.classList.add("swap");
+  setTimeout(() => {
+    setImg(document.getElementById("svcImg"), s.img, 800);
+    document.getElementById("svcTitle").textContent = s.name;
+    document.getElementById("svcText").textContent = s.text;
+    document.getElementById("svcPoints").innerHTML = s.pts.map(p => `<li><svg><use href="#star"/></svg>${p}</li>`).join("");
+    panel.classList.remove("swap");
+  }, 160);
+}
+showSvc(0);
+
+/* Projects */
+const CATS = { all: "All", living: "Living rooms", bedroom: "Bedrooms", walls: "Feature walls", dining: "Dining" };
+const PROJECTS = [
+  { t: "Living room feature wall", c: "living", img: "living", cls: "wide" },
+  { t: "Bedroom accent wall", c: "bedroom", img: "bedroom", cls: "tall" },
+  { t: "Dining area decor", c: "dining", img: "dining", cls: "" },
+  { t: "Textured wall finish", c: "walls", img: "detail", cls: "" },
+  { t: "Lounge styling", c: "living", img: "lounge", cls: "wide" },
+  { t: "Entrance wall and mirror", c: "walls", img: "mirror", cls: "" }
+];
+const grid = document.getElementById("grid"), chips = document.getElementById("chips");
+PROJECTS.forEach((p, i) => {
+  const t = document.createElement("button");
+  t.className = "tile " + p.cls; t.dataset.cat = p.c; t.dataset.i = i;
+  t.setAttribute("aria-label", "View " + p.t);
+  t.innerHTML = `<div class="ph"></div><figcaption>${p.t}<small>${CATS[p.c]}</small></figcaption>`;
+  setImg(t.querySelector(".ph"), p.img, 900);
+  t.addEventListener("click", () => openLb(i));
+  grid.appendChild(t);
+});
+Object.entries(CATS).forEach(([k, label]) => {
+  const c = document.createElement("button");
+  c.className = "chip"; c.textContent = label; c.setAttribute("aria-pressed", k === "all");
+  c.addEventListener("click", () => {
+    chips.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", x === c));
+    grid.classList.toggle("filtered", k !== "all");
+    grid.querySelectorAll(".tile").forEach(t => t.hidden = !(k === "all" || t.dataset.cat === k));
+  });
+  chips.appendChild(c);
+});
+
+/* Lightbox */
+const lb = document.getElementById("lb");
+let cur = 0;
+const visible = () => [...grid.querySelectorAll(".tile:not([hidden])")].map(t => +t.dataset.i);
+function paintLb() {
+  const p = PROJECTS[cur];
+  setImg(document.getElementById("lbImg"), p.img, 1600);
+  document.getElementById("lbCap").textContent = p.t;
+}
+function openLb(i) { cur = i; paintLb(); lb.classList.add("open"); document.body.style.overflow = "hidden"; document.getElementById("lbX").focus(); }
+function closeLb() { lb.classList.remove("open"); document.body.style.overflow = ""; }
+function stepLb(d) { const v = visible(); const k = v.indexOf(cur); cur = v[(k + d + v.length) % v.length]; paintLb(); }
+document.getElementById("lbX").addEventListener("click", closeLb);
+document.getElementById("lbP").addEventListener("click", () => stepLb(-1));
+document.getElementById("lbN").addEventListener("click", () => stepLb(1));
+lb.addEventListener("click", e => { if (e.target === lb) closeLb(); });
+addEventListener("keydown", e => {
+  if (e.key === "Escape") { closeLb(); setMenu(false); }
+  if (lb.classList.contains("open")) { if (e.key === "ArrowLeft") stepLb(-1); if (e.key === "ArrowRight") stepLb(1); }
+});
+
+/* Contact form -> WhatsApp */
+document.getElementById("form").addEventListener("submit", e => {
+  e.preventDefault();
+  const name = document.getElementById("fn").value.trim();
+  const phone = document.getElementById("fp").value.trim();
+  const type = document.getElementById("ft").value;
+  const details = document.getElementById("fm").value.trim();
+  const note = document.getElementById("formNote");
+  if (!name) { note.textContent = "Please enter your name so we know who to reply to."; document.getElementById("fn").focus(); return; }
+  const msg = `Hello Inner Space, my name is ${name}. I am interested in: ${type}.` +
+    (details ? `\n\nAbout my project: ${details}` : "") +
+    (phone ? `\n\nMy number: ${phone}` : "");
+  note.textContent = "Opening WhatsApp with your message.";
+  const w = window.open(waLink(msg), "_blank", "noopener");
+  if (!w) location.href = waLink(msg);
+});
+</script>
+</body>
+</html>
